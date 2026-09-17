@@ -1,0 +1,26 @@
+{
+	"/": {
+		"root": { "props": { "title": "" } },
+		"content": [
+			{
+				"type": "HeadingBlock",
+				"props": { "title": "Heading", "id": "HeadingBlock-3b0874de-b68d-4246-b21f-a4a36104f187" }
+			},
+			{
+				"type": "HeadingBlock",
+				"props": { "title": "Heading", "id": "HeadingBlock-df2c5110-5b9e-4c28-a558-c6d535f0548d" }
+			}
+		],
+		"zones": {}
+	},
+	"/about": {
+		"root": { "props": { "title": "" } },
+		"content": [
+			{
+				"type": "HeadingBlock",
+				"props": { "title": "about page", "id": "HeadingBlock-218c51a6-2f19-4c2c-9802-912ce261fbf5" }
+			}
+		],
+		"zones": {}
+	}
+}
