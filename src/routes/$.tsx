@@ -39,11 +39,14 @@ export const Route = createFileRoute("/$")({
 		return {
 			meta: [
 				{
-					title: `${loaderData?.isEdit ? "Puck: " : ""} ${loaderData?.data.root.props?.title || loaderData?.path}`,
+					title: `${loaderData?.isEdit ? "Puck: " : ""}${loaderData?.data.root.props?.title || loaderData?.path}`,
 				},
 			],
 		};
 	},
+	pendingComponent: () => <div>Loading...</div>,
+	errorComponent: () => <div>Error</div>,
+	notFoundComponent: () => <div>Not Found</div>,
 	component: RouteComponent,
 });
 

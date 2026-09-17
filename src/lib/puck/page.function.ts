@@ -3,6 +3,7 @@ import path from "node:path";
 import type { Data } from "@puckeditor/core";
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
+import { puckDataSchema } from "./config.puck";
 
 const DB_PATH = path.join(import.meta.dirname, "database.json");
 
@@ -23,7 +24,7 @@ export const setPageFn = createServerFn({ method: "POST" })
 	.validator(
 		z.object({
 			path: z.string(),
-			data: z.any(),
+			data: puckDataSchema,
 		}),
 	)
 	.handler(({ data }) => {
